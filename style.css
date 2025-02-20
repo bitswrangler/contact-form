@@ -45,7 +45,6 @@
 
     .container{ 
 
-        min-width: 70%;
         background-color: whitesmoke;   
 
 
@@ -54,6 +53,7 @@
       .wrapper{
         
 
+        max-width: 100%;
         min-height: 500px;
       
         margin: 2rem;
@@ -80,7 +80,8 @@
       .column > *{
 
         /* border: 2px dotted red; */
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
+        flex: 1 0 0 ;
       }
       
       .form-group{
