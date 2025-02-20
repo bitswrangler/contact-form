@@ -1,0 +1,183 @@
+@layer reset{
+
+
+    *,*::after,*::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@layer base {
+
+    html{
+
+        font-size: 62.5%;
+    }
+
+    body{
+
+        font-family: 'Roboto', Helvetica, 'Open Sans';
+        display: grid;
+        grid-template: auto/auto;
+        place-items: center;
+        height: 100vh;
+        
+         background-color: #6da44c;
+    }
+
+
+    h1,h2,h3,h4,h5,h6{
+
+        font-family: 'Open Sans';
+        font-weight: 700;
+    }
+
+    h1{
+
+        font-size: 1.5rem;
+    }
+}
+
+
+@layer component{
+
+
+    .container{ 
+
+        min-width: 70%;
+        background-color: whitesmoke;   
+
+
+      }
+      
+      .wrapper{
+        
+
+        min-height: 500px;
+      
+        margin: 2rem;
+    }
+      
+      .wrapper *{
+        
+        /* border: 2px dotted red; */
+      
+      }
+
+      .form .title{
+
+         margin-bottom: 2rem;
+      }
+
+      .column{
+
+          display: flex;
+          gap: 0.5rem;
+      }
+
+      
+      .column > *{
+
+        /* border: 2px dotted red; */
+        flex-basis: 100%;
+      }
+      
+      .form-group{
+
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin-bottom: 2rem;
+
+
+      }
+
+  
+
+      input[type="text"],
+      input[type="email"]
+      {
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border: 1px solid #ccc;
+      }
+
+      label{
+
+
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+
+    .query-group{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .query-group >*{
+
+        border: 1px solid #ccc;
+        padding: 0 0.5rem;
+        flex: 1 0 0;
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        border-radius: 7px;
+
+
+    }
+
+    textarea{
+
+        border-radius: 7px;
+    }
+
+
+    .form-group.consent{
+
+        flex-direction: row;
+        gap:1rem
+    }
+
+    .btn{
+
+        padding: 1rem 2rem;
+        border: none;
+        background-color: #3e7a1c;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 100%;
+    }
+
+
+    span.required{
+
+        margin-left:  0.5rem;
+        color: #3e7a1c;
+
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus
+    {
+
+        outline: 2px solid #3e7a1c;
+    }
+
+
+}
+
+
+
+
+  
